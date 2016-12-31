@@ -1,0 +1,28 @@
+{
+  "name": "scyra-client-dashboard",
+  "version": "0.0.1",
+  "repository": "https://github.com/Scyra/ClientDashboard",
+  "description": "Client dashboard for Scyra fulfillment",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "",
+    "babel-loader": "",
+    "babel-polyfill": "",
+    "babel-preset-env": "",
+    "babel-preset-react": "",
+    "babel-preset-latest": "",
+    "babel-preset-babili": "",
+    "babel-plugin-transform-runtime": "",
+    "babel-runtime": "",
+    "css-loader": "",
+    "grommet": "",
+    "node-sass": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "react": "",
+    "react-dom": "",
+    "react-router": "^4.0.0-alpha.6",
+    "whatwg-fetch": "",
+    "webpack": ""
+  }
+}
