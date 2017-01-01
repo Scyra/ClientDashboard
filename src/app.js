@@ -9,6 +9,7 @@ import Article from 'grommet/components/Article';
 import Section from 'grommet/components/Section';
 import Header from 'grommet/components/Header';
 import Menu from 'grommet/components/Menu';
+import Anchor from 'grommet/components/Anchor';
 
 import './styles/index.scss';
 
@@ -17,13 +18,17 @@ ReactDOM.render(
     <Split flex="right">
       <Sidebar colorIndex="neutral-1">
         <Header><h1>Scyra</h1></Header>
-        <Menu>Menu</Menu>
+        <Menu basis="full" flex="grow" full="true" responsive="false">
+          <Anchor>Dashboard</Anchor>
+          <Anchor>Orders</Anchor>
+          <Anchor>SKUs</Anchor>
+        </Menu>
       </Sidebar>
-      <Article basis="full" size="full" flex="grow" full="vertical">
-        <Section alignSelf="stretch" basis="1/2" colorIndex="light-1">
+      <Article full="vertical">
+        <Section colorIndex="light-1">
           Section 1
         </Section>
-        <Section alignSelf="stretch" basis="1//2" colorIndex="light-2">
+        <Section colorIndex="light-2">
           Section 2
         </Section>
       </Article>
