@@ -18,7 +18,7 @@ ReactDOM.render(
     <Split flex="right">
       <Sidebar colorIndex="neutral-1">
         <Header><h1>Scyra</h1></Header>
-        <Menu basis="full" flex="grow" full="true" responsive="false">
+        <Menu basis="full" flex="grow" full={true} responsive={false}>
           <Anchor>Dashboard</Anchor>
           <Anchor>Orders</Anchor>
           <Anchor>SKUs</Anchor>
@@ -33,4 +33,6 @@ ReactDOM.render(
         </Section>
       </Article>
     </Split>
-  </App>, document.getElementById('app'));
+  </App>,
+  document.getElementById('app')
+);

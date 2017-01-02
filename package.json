@@ -5,7 +5,8 @@
   "description": "Client dashboard for Scyra fulfillment",
   "license": "MIT",
   "scripts": {
-    "start": "node --harmony node_modules/webpack/bin/webpack.js --watch"
+    "start": "node --harmony node_modules/.bin/webpack-dev-server --hot --inline --content-base build/public/",
+    "build": "node --harmony node_modules/.bin/webpack -p"
   },
   "dependencies": {
     "babel-core": "",
@@ -27,5 +28,9 @@
     "react-router": "^4.0.0-alpha.6",
     "whatwg-fetch": "",
     "webpack": ""
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.25.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }
