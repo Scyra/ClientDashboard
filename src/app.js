@@ -18,17 +18,17 @@ ReactDOM.render(
     <Split flex="right">
       <Sidebar colorIndex="neutral-1">
         <Header><h1>Scyra</h1></Header>
-        <Menu basis="full" flex="grow" full={true} responsive={false}>
+        <Menu basis="full" flex="grow">
           <Anchor>Dashboard</Anchor>
           <Anchor>Orders</Anchor>
           <Anchor>SKUs</Anchor>
         </Menu>
       </Sidebar>
       <Article full="vertical">
-        <Section colorIndex="light-1">
+        <Section flex="grow" colorIndex="light-1">
           Section 1
         </Section>
-        <Section colorIndex="light-2">
+        <Section flex="grow" colorIndex="light-2">
           Section 2
         </Section>
       </Article>
