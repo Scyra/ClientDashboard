@@ -1,9 +1,12 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: [__dirname + '/src/app.js'],
+  entry: [
+    `${__dirname}/src/app.js`
+  ],
   output: {
-    path: './build/public',
+    path: `${__dirname}/build/public`,
     filename: 'app.js',
     publicPath: '/'
   },
@@ -33,10 +36,14 @@ module.exports = {
     ]
   },
   sassLoader: {
-    includePaths: [
-      './node_modules']
+    includePaths: [`${__dirname}/node_modules`]
   },
-  plugins: [/*
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: `${__dirname}/src/index.html`,
+    }),
+    /*
     new webpack.DefinePlugin({'process.env': {'NODE_ENV': JSON.stringify('production')}}),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),

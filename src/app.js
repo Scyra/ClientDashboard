@@ -33,4 +33,6 @@ ReactDOM.render(
         </Section>
       </Article>
     </Split>
-  </App>, document.getElementById('app'));
+  </App>,
+  document.getElementById('app')
+);
